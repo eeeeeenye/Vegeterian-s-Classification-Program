@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            @import url(https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@450);
+            @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Serif+KR:wght@300&display=swap');
+            
+            body{
+                text-align: center;
+                background-color: antiquewhite;
+                font-family: 'Noto Serif KR', serif;
+            }
+            #upload{
+                border: 1rem salmon solid;
+                background-color: salmon;
+                color: aliceblue;
+                position: absolute;
+                right: 40rem;
+                top: 15rem;
+            }
+            #submit_label{
+                border: 1rem salmon solid;
+                background-color: salmon;
+                color: aliceblue;
+                position: absolute;
+                top: 20rem;
+                right: 40rem;
+            }
+            #file{
+                position: absolute;
+                left: 10rem;
+            }
+
+            #submit{
+                position: absolute;
+                left: 5rem;
+            }
+
+            u{
+                text-decoration: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
+            
+        <label for=b1 id="upload">
+            <u>  upload the image  </u>
+            <input type="file" name="file" id="file">
+        </label>
+        
+        <br>
+        <br>
+        <label for=b2 id="submit_label">
+            <u>submit</u>
+            <input  type='submit' name="submit" id="submit">
+        </label>
+        
+
+    </form>
+    </body>
+</html>

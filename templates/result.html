@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>view image</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: antiquewhite;
+            font-family: 'Noto Serif KR', serif;
+            }
+        
+        #back{
+            background-color: salmon;
+            color: aliceblue;
+            width: 100px;
+            height: 30px;
+            font-size: medium;
+            font-family: 'Noto Serif KR', serif;
+            border: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1> {{ result }} </h1>
+ 
+    <p>
+         <button type="button" id="back" onclick="location.href='/' ">뒤로가기</button>
+    </p>
+        <p>
+            <img src="{{ url_for('static', filename=f_name) }}" width="500" height="500">
+        </p>
+</body>
+</html>
